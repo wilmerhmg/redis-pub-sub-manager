@@ -1,5 +1,5 @@
 {
-  "name": "redis-pubsub",
+  "name": "redis-pubsub-manager",
   "version": "1.0.0",
   "description": "Redis (Pub/Sub) Manager to Events http://redis.js.org/#api-publish-subscribe",
   "main": "RedisPubSub.js",

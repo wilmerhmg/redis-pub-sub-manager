@@ -1,7 +1,7 @@
 # Usage of RedisPubSub to Events
 
-[![NPM version](https://img.shields.io/npm/v/redis-pubsub.svg)](https://npmjs.org/package/redis-pubsub)
-[![Downloads](https://img.shields.io/npm/dm/redis-pubsub.svg)](https://npmjs.org/package/redis-pubsub)
+[![NPM version](https://img.shields.io/npm/v/redis-pubsub-manager.svg)](https://npmjs.org/package/redis-pubsub-manager)
+[![Downloads](https://img.shields.io/npm/dm/redis-pubsub-manager.svg)](https://npmjs.org/package/redis-pubsub-manager)
 [![Build Status](https://travis-ci.org/wilmerhmg/redis-pub-sub-manager.svg?branch=master)](https://travis-ci.org/wilmerhmg/redis-pub-sub-manager)
 [![Coverage Status](https://coveralls.io/repos/github/wilmerhmg/redis-pub-sub-manager/badge.svg?branch=master)](https://coveralls.io/github/wilmerhmg/redis-pub-sub-manager?branch=master)
 
@@ -52,7 +52,7 @@ Custom events, multiple callbacks for the same event, supports flat messages and
 
 You write less code.
 ```js
-const RedisPubSub = require('redis-pubsub');
+const RedisPubSub = require('redis-pubsub-manager');
 const redisPubSub = new RedisPubSub(...optionsOfRedis); //View https://www.npmjs.com/package/redis#rediscreateclient
 
 //Add bind action to event
