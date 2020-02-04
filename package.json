@@ -1,0 +1,32 @@
+{
+  "name": "redispubsub",
+  "version": "1.0.0",
+  "description": "Redis (Pub/Sub) Manager to Events http://redis.js.org/#api-publish-subscribe",
+  "main": "RedisPubSub.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "redis-mock": "^0.48.0"
+  },
+  "scripts": {
+    "test": "jest --detectOpenHandles"
+  },
+  "author": "Wilmer H. Muñoz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilmerhmg/redis-pub-sub-manager.git"
+  },
+  "keywords": [
+    "redis",
+    "events",
+    "manager",
+    "emitter",
+    "publish",
+    "subscriber"
+  ],
+  "bugs": {
+    "url": "https://github.com/wilmerhmg/redis-pub-sub-manager/issues"
+  },
+  "homepage": "https://github.com/wilmerhmg/redis-pub-sub-manager"
+}
