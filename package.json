@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Redis (Pub/Sub) Manager to Events http://redis.js.org/#api-publish-subscribe",
   "main": "RedisPubSub.js",
-  "dependencies": {},
+  "dependencies": {
+    "redis": "^2.8.0"
+  },
   "devDependencies": {
     "coveralls": "^3.0.9",
     "jest": "^25.1.0",
     "redis-mock": "^0.48.0"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles",
+    "test:coverage": "jest --detectOpenHandles --coverage"
   },
   "author": "Wilmer H. Muñoz",
   "license": "MIT",
