@@ -31,6 +31,12 @@ class RedisPubSub {
 		delete this.Subscriptions[Chanel];
 	}
 
+	unbindAll() {
+		for(const Chanel in this.Subscriptions) {
+			this.unbind(Chanel);
+		}
+	}
+
 	onResolve(Chanel, Message) {
 		const Events = this.Subscriptions[Chanel]
 			? this.Subscriptions[Chanel] : [];
@@ -48,11 +54,7 @@ class RedisPubSub {
 	}
 
 	stringifyMessage(Message) {
-		try {
-			return JSON.stringify(Message);
-		} catch (Exception) {
-			return Message.toString();
-		}
+		return JSON.stringify(Message);
 	}
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "redis-pubsub-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redis (Pub/Sub) Manager to Events http://redis.js.org/#api-publish-subscribe",
   "main": "RedisPubSub.js",
   "dependencies": {
@@ -9,11 +9,11 @@
   "devDependencies": {
     "coveralls": "^3.0.9",
     "jest": "^25.1.0",
+    "nyc": "^15.0.0",
     "redis-mock": "^0.48.0"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles",
-    "test:coverage": "jest --detectOpenHandles --coverage"
+    "test": "jest --detectOpenHandles --coverage  && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Wilmer H. Muñoz",
   "license": "MIT",
